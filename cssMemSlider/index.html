@@ -17,16 +17,16 @@
     <title>CSS Mem Slider</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container">  
       <div class="slider">
+        <input class="navigation__input" type="radio" name="radio" id="radio-1" checked />
+        <input class="navigation__input" type="radio" name="radio" id="radio-2" />
+        <input class="navigation__input" type="radio" name="radio" id="radio-3" />
+        <input class="navigation__input" type="radio" name="radio" id="radio-4" />
+        <input class="navigation__input" type="radio" name="radio" id="radio-5" />
         <div class="slider__image-frame">
           <div class="slider__list">
-            <input class="navigation__input" type="radio" name="radio" id="r1" checked />
-            <input class="navigation__input" type="radio" name="radio" id="r2" />
-            <input class="navigation__input" type="radio" name="radio" id="r3" />
-            <input class="navigation__input" type="radio" name="radio" id="r4" />
-            <input class="navigation__input" type="radio" name="radio" id="r5" />
-            <div class="slider__item visible">
+            <div class="slider__item first-image-item">
               <img src="images/monkey.jpeg" alt="monkey" />
             </div>
             <div class="slider__item">
@@ -46,60 +46,29 @@
         <div class="slider__footer">
           <div class="slider__text-frame">
             <div class="slider__text-list">
-              <div class="slider__text-item">
-                <span class="slider__content">Lorem ipsum dolor sit amet.</span>
+              <div class="slider__text-item  first-text-item">
+                <span class="slider__text-content">Lorem ipsum dolor sit amet.</span>
+              </div>
+              <div class="slider__text-item ">
+                <span class="slider__text-content">Lorem ipsum dolor sit amet.</span>
               </div>
               <div class="slider__text-item">
-                <span class="slider__content"
-                  >Lorem ipsum dolor sit amet consectetur.</span
-                >
+                <span class="slider__text-content">Lorem ipsum dolor sit amet.</span>
               </div>
               <div class="slider__text-item">
-                <span class="slider__content"
-                  >Lorem ipsum dolor sit amet, consectetur adipisicing.</span
-                >
+                <span class="slider__text-content">Lorem ipsum dolor sit amet.</span>
               </div>
-              <div class="slider__text-item">
-                <span class="slider__content">Lorem ipsum dolor sit amet.</span>
-              </div>
-              <div class="slider__text-item">
-                <span class="slider__content"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing.</span
-                >
+              <div class="slider__text-item ">
+                <span class="slider__text-content">Lorem ipsum dolor sit amet.</span>
               </div>
             </div>
           </div>
           <div class="slider__navigation navigation">
-            <div class="navigation__element">
-              <label class="navigation__label" for="1">
-                <span class="navigation__button"></span>
-              </label>
-              
-            </div>
-            <div class="navigation__element">
-              <label class="navigation__label" for="r2">
-                <span class="navigation__button"></span>
-              </label>
-              
-            </div>
-            <div class="navigation__element">
-              <label class="navigation__label" for="r3">
-                <span class="navigation__button"></span>
-              </label>
-              
-            </div>
-            <div class="navigation__element">
-              <label class="navigation__label" for="r4">
-                <span class="navigation__button"></span>
-              </label>
-              
-            </div>
-            <div class="navigation__element">
-              <label class="navigation__label" for="r5">
-                <span class="navigation__button"></span>
-              </label>
-              
-            </div>
+            <label class="navigation__label label-one" for="radio-1"></label>
+            <label class="navigation__label label-two" for="radio-2"></label>
+            <label class="navigation__label label-three" for="radio-3"></label>
+            <label class="navigation__label label-four" for="radio-4"></label>          
+            <label class="navigation__label label-five" for="radio-5"></label>  
           </div>
         </div>
       </div>

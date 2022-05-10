@@ -1,0 +1,133 @@
+body {
+  background-color: #c4c5c6;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.slider__image-frame {
+  max-width: 120rem;
+  height: auto;
+  margin-bottom: 2rem;
+  border: 0.3rem solid #dedfdf;
+  overflow: hidden;
+}
+
+.slider__list {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slider__item {
+  width: 20%;
+  transition: all 0.6s linear;
+}
+
+.slider__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__text-frame {
+  max-width: 40rem;
+  height: auto;
+  overflow: hidden;
+}
+.slider__text-list {
+  width: 500%;
+  display: flex;
+}
+.slider__text-item {
+  width: 20%;
+  height: auto;
+  font-size: 2rem;
+  transition: all 0.6s linear;
+}
+
+.slider__text-content {
+  display: inline-block;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation__label {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.5rem solid #c4c5c6;
+  border-radius: 50%;
+  background-color: red;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.navigation__label:hover {
+  opacity: 0.5;
+}
+
+.navigation__label:not(:last-child) {
+  margin-right: 0.1rem;
+}
+
+.navigation__input {
+  display: none;
+  visibility: hidden;
+}
+
+#radio-1:checked ~ .slider__image-frame .first-image-item,
+#radio-1:checked ~ .slider__footer .first-text-item {
+  margin-left: 0;
+}
+
+#radio-2:checked ~ .slider__image-frame .first-image-item,
+#radio-2:checked ~ .slider__footer .first-text-item {
+  margin-left: -20%;
+}
+
+#radio-3:checked ~ .slider__image-frame .first-image-item,
+#radio-3:checked ~ .slider__footer .first-text-item {
+  margin-left: -40%;
+}
+
+#radio-4:checked ~ .slider__image-frame .first-image-item,
+#radio-4:checked ~ .slider__footer .first-text-item {
+  margin-left: -60%;
+}
+
+#radio-5:checked ~ .slider__image-frame .first-image-item,
+#radio-5:checked ~ .slider__footer .first-text-item {
+  margin-left: -80%;
+}
+
+#radio-1:checked ~ .slider__footer .label-one {
+  opacity: 1;
+}
+
+#radio-2:checked ~ .slider__footer .label-two {
+  opacity: 1;
+}
+
+#radio-3:checked ~ .slider__footer .label-three {
+  opacity: 1;
+}
+
+#radio-4:checked ~ .slider__footer .label-four {
+  opacity: 1;
+}
+
+#radio-5:checked ~ .slider__footer .label-five {
+  opacity: 1;
+}
